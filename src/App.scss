@@ -1,8 +1,12 @@
+$color-negrito: #333; //declarando variables
+$color-secundario: blue;
+
 .nav-title {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    color: #333333;
+    color: $color-negrito; //usando variables
+    background-color: aquamarine;
 }
 
 .container {
@@ -38,4 +42,26 @@ a {
     text-decoration: none;
     color: #333;
     margin-left: 15px;
+}
+
+.welcome::after {
+    border: 1px solid purple;
+}
+
+#cuenta {
+    color: red;
+}
+
+#cuenta:hover {
+    color: $color-secundario;
+    cursor: pointer;
+}
+
+.saludo-container {
+
+    //afecta solo a los elementos dentro de -saludo-container
+    h1,
+    h2 {
+        color: $color-secundario;
+    }
 }
